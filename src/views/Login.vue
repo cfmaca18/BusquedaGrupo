@@ -55,7 +55,7 @@ export default {
                 }
 
                 axios
-                    .post('api/token/login/', formData)
+                    .post('http://127.0.0.1:8000/api/token/login/', formData) 
                     .then(response => {
                         const token = response.data.auth_token
 
